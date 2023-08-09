@@ -14,8 +14,8 @@ class AddTodoPage extends StatefulWidget {
 }
 
 class _AddTodoPageState extends State<AddTodoPage> {
-  TextEditingController _titleController = TextEditingController();
-  TextEditingController _descController = TextEditingController();
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _descController = TextEditingController();
   bool isEdit = false;
   @override
   void initState() {

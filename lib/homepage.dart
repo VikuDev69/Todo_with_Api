@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
     if (response.statusCode == 200) {
       final json = jsonDecode(response.body) as Map;
       final result = json['items'] as List;
-      print(response.body);
+      // print(response.body);
       setState(() {
         items = result;
       });
