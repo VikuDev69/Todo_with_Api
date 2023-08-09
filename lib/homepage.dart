@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
     final rout = MaterialPageRoute(
       builder: (context) => AddTodoPage(todo: item),
     );
-    Navigator.push(context, rout);
+    await Navigator.push(context, rout);
     setState(() {
       isLoading = true;
     });
